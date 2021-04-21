@@ -38,10 +38,14 @@ class ProductDetailScreen extends StatelessWidget {
             SizedBox(
               height: 10,
             ),
-            Text(
-              loadedProduct.description,
-              textAlign: TextAlign.center,
-              softWrap: true,
+            Container(
+              width: double.infinity,
+              padding: EdgeInsets.symmetric(horizontal: 10),
+              child: Text(
+                loadedProduct.description,
+                textAlign: TextAlign.center,
+                softWrap: true,
+              ),
             ),
           ],
         ),
